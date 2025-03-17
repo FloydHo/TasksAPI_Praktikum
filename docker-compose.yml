@@ -1,0 +1,20 @@
+services:
+  app:
+    build: .
+    container_name: ToDoAPI_Praktikum
+    ports:
+      - "8000:8000"
+    volumes:
+      - task_data:/app/db
+    environment:
+      - DATABASE_URL=sqlite:///./db/tasks_manager.db
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+        reservations:
+          memory: 512M
+
+volumes:
+  task_data:
+    driver: local
