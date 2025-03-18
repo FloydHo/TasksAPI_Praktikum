@@ -53,7 +53,7 @@ docker-compose down
 Virtuelle Umgebung einrichten:
 
 ```bash
-python -m venv .venv
+py -m venv .venv
 ```
 
 Virtuelle Umgebung aktivieren:
