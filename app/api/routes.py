@@ -25,7 +25,7 @@ logger = logging.getLogger(__name__)
 #Werden zu Validierung benötigt ähnlich wie C# Model-Validations
 
 class TaskUpdate(BaseModel):
-    title: str | None = Field(None, min_length=1, description="Title cannot be empty.")
+    title: str | None = Field(None, min_length=1, max_length=50, description="Title cannot be empty.")
     description: str | None = None
     completed: bool | None = None
 
