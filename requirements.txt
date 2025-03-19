@@ -1,6 +1,5 @@
-sqlalchemy~=2.0.39
-fastapi~=0.115.11
+sqlalchemy
+fastapi
 fastapi[standard]
 pytest
-starlette~=0.46.1
-pydantic~=2.10.6
+pydantic

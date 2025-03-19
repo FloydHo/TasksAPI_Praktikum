@@ -1,7 +1,4 @@
 from fastapi import FastAPI, Request
-from fastapi.middleware.cors import CORSMiddleware
-from starlette.responses import FileResponse
-from starlette.staticfiles import StaticFiles
 
 from app.api import routes
 from app.database.session import engine, Base
@@ -12,15 +9,6 @@ import logging
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
-
-#CORS erlauben
-# app.add_middleware(
-#     CORSMiddleware,
-#     allow_origins=["*"],
-#     allow_credentials=True,
-#     allow_methods=["*"],
-#     allow_headers=["*"],
-# )
 
 logging.basicConfig(
     level=logging.INFO,
@@ -35,8 +23,6 @@ logging.getLogger("uvicorn").propagate = False
 logging.getLogger("uvicorn.error").propagate = False
 logging.getLogger("uvicorn.access").propagate = False
 logging.getLogger("uvicorn.error").setLevel(logging.CRITICAL)
-
-#app.mount("/static", StaticFiles(directory="app/static"), name="static")
 
 logger = logging.getLogger(__name__)
 

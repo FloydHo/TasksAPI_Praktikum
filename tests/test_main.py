@@ -4,9 +4,7 @@ import os
 os.environ["DATABASE_URL"] = "sqlite:///../tests/test_db.db"
 
 from fastapi.testclient import TestClient
-from sqlalchemy import inspect
 from app import main
-from app.database.session import engine
 
 
 client = TestClient(main.app)

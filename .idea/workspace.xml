@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8f45add-afb8-4b54-932a-c6ca35e4ec8e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/TaskManagerAPI_Praktikum.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
+      <changelist_data name="FloydHo" email="floyd.hortmanns@gmx.de" automatic="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database/crud.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/crud.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +27,25 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="FloydHo &lt;floyd.hortmanns@gmx.de&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;FloydHo&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/FloydHo/TasksAPI_Praktikum.git&quot;,
+    &quot;accountId&quot;: &quot;51ce0931-3a2d-4fa8-8512-c872c8dcf978&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -39,34 +57,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python tests.Python tests for testTaskAPI.test_create_task.executor": "Run",
-    "Python tests.Python tests for testTaskAPI.test_get_task_by_id.executor": "Run",
-    "Python tests.Python tests for testTaskAPI.test_get_task_by_id_not_found.executor": "Run",
-    "Python tests.Python tests for testTaskAPI.test_get_tasks.executor": "Run",
-    "Python tests.Python tests for test_main.test_create_task.executor": "Run",
-    "Python tests.Python tests for test_main.test_create_task_empty_error.executor": "Run",
-    "Python tests.Python tests for test_main.test_create_task_no_title_error.executor": "Run",
-    "Python tests.Python tests for test_main.test_create_task_whitespace_error.executor": "Run",
-    "Python tests.Python tests for test_main.test_database_connection.executor": "Run",
-    "Python tests.Python tests for test_main.test_get_tasks.executor": "Run",
-    "Python tests.Python tests for test_main.test_get_tasks_by_id.executor": "Run",
-    "Python tests.Python tests for test_main.test_table_exists.executor": "Run",
-    "Python tests.Python tests for test_main.test_update_title_whitespace_error.executor": "Run",
-    "Python tests.Python tests for tests.test_main.test_get_tasks.executor": "Run",
-    "Python tests.Python tests in test_main.py.executor": "Run",
-    "Python.main.executor": "Debug",
-    "Python.session.executor": "Run",
-    "Python.testDb.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Floyd/PycharmProjects/TaskManagerAPI_Praktikum/app/api",
-    "settings.editor.selected.configurable": "ml.llm.AIAssistantPromptsLibrary"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python tests.Python tests for testTaskAPI.test_create_task.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for testTaskAPI.test_get_task_by_id.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for testTaskAPI.test_get_task_by_id_not_found.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for testTaskAPI.test_get_tasks.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_main.test_create_task.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_main.test_create_task_empty_error.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_main.test_create_task_no_title_error.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_main.test_create_task_whitespace_error.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_main.test_database_connection.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_main.test_get_tasks.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_main.test_get_tasks_by_id.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_main.test_table_exists.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_main.test_update_title_whitespace_error.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.test_main.test_get_tasks.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_main.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.session.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testDb.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Floyd/PycharmProjects/TaskManagerAPI_Praktikum/app/api&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Floyd\PycharmProjects\TaskManagerAPI_Praktikum\app\api" />
@@ -181,7 +199,31 @@
       <option name="presentableId" value="Default" />
       <updated>1742019829365</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit:&#10;Complete FastAPI-based API for keeping track of Tasks">
+      <option name="closed" value="true" />
+      <created>1742253273667</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742253273667</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit:&#10;Complete FastAPI-based API for keeping track of Tasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit:&#10;Complete FastAPI-based API for keeping track of Tasks" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -193,8 +235,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tests/test_main.py</url>
-          <line>24</line>
+          <line>22</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/api/routes.py</url>
+          <line>169</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

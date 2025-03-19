@@ -101,4 +101,4 @@ def exist_task(task_id: int, db: Session):
         return False
     except Exception as e:
         logger.error(f"Error checking if task exists with ID {task_id}: {e}")
-        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Error checking task existence.")
+        raise HTTPException(status_code=500, detail="Error checking task existence.")

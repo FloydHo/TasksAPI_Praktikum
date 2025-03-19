@@ -5,7 +5,7 @@ from sqlalchemy.orm import Session
 
 from app.database.models.task import Task
 from app.database import crud, session
-from pydantic import BaseModel, Field, validator, field_validator
+from pydantic import BaseModel, Field, field_validator
 
 router = APIRouter()
 
@@ -64,7 +64,7 @@ class TaskCreate(TaskUpdate):
 )
 def get_all_tasks(db: Session = Depends(get_db)):
     """
-    Get all tasks from the database.
+    Get all tasks from the database.<br>
     If empty; gets an empty list "[]"
     """
     tasks = crud.get_all_tasks(db)
@@ -110,7 +110,6 @@ def get_task_by_id(task_id: int, db: Session = Depends(get_db)):
 
 @router.post("/tasks/",
              summary="Creates a new Task in Database",
-             description="This method creates a new Task with title(required), description(optional) and status(optional). ",
              responses={
                  200: {"description": "Task created successfully"},
                  500: {"description": "Internal Server Error"}
@@ -118,8 +117,8 @@ def get_task_by_id(task_id: int, db: Session = Depends(get_db)):
              )
 def create_new_task(task_create_data: TaskCreate, db: Session = Depends(get_db)):
     """
-    Creates a new Task.
-    Needs Format:
+    Creates a new Task with title(required), description(optional) and status(optional).<br>
+    Needs Format:<br>
     {"id": "1", "title": "Lernen", "description" : "FastAPI", "completed" : "false"}
 
     """
@@ -147,7 +146,7 @@ def create_new_task(task_create_data: TaskCreate, db: Session = Depends(get_db))
                )
 def delete_task_by_id(task_id: int, db: Session = Depends(get_db)):
     """
-    Deletes a task from the database by its ID.
+    Deletes a task from the database by its ID.<br>
     If the task does not exist, it will return a 404 error.
     """
     deleted_task = crud.delete_task_by_id(task_id, db)
@@ -165,7 +164,6 @@ def delete_task_by_id(task_id: int, db: Session = Depends(get_db)):
 
 @router.put("/tasks/{task_id}",
             summary="Update an existing task",
-            description="Updates an existing task identified by its ID. The request should include a JSON object with the fields that need to be updated.",
             responses={
                 200: {"description": "Task updated successfully"},
                 404: {"description": "Task not found"},
@@ -175,8 +173,8 @@ def delete_task_by_id(task_id: int, db: Session = Depends(get_db)):
             )
 def update_task_by_id(task_id: int, task_update: TaskUpdate, db: Session = Depends(get_db)):
     """
-    Updates a task's details in the database using its ID.
-    Only the fields provided in the request will be updated.
+    Updates a task's details in the database using its ID.<br>
+    Only the fields provided in the request will be updated.<br>
     If the task does not exist, a 404 error is returned.
     """
 
